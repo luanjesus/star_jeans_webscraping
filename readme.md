@@ -1,5 +1,4 @@
 ![](https://github.com/luanjesus/star_jeans/blob/main/repos/img/star_jeans.png)
-![](C:\Users\USER\Desktop\projects\webscraping_hm\repos\img\star_jeans.png)
 # STAR JEANS - Data Science Project
 
 In this project, a fictional Brazilian company aims to enter the American fashion market by setting up an e-commerce store for selling men's jeans.
