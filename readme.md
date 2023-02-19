@@ -9,9 +9,9 @@ The company considers its main competitor to be the H&M, a real large-scale Amer
 
 ## 1. Business Problem
 
-    What is the best price selling price for each pants model?
-    How many types of pants and colors does H&M?
-    What are the necessary raw materials for making these pants the comparing with the main competitor ?
+   What is the best selling price for each pants model?
+   How many types of pants and colors does H&M?
+   What are the necessary raw materials for making these pants the comparing with the main competitor?
 
 To answer these questions, I created an automatic ETL (extract, transform and load data) process with web scraping to collect the data from H&M website. I let it collect data for a few days, inserting it into an SQLite database. And after this process, I did the exploratory data analysis (EDA) for each business problem.
 
