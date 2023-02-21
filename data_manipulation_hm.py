@@ -4,7 +4,7 @@ import pandas as pd
 #connection
 connection = fdb.database_conetion( 'database_hm', '/webscraping_hm/database')
 
-query_delete_all = "DELETE FROM SHOWCASE_HM"
+query_delete_all = "DELETE DISTINC START_SCRAPY FROM SHOWCASE_HM"
 query_select_all = "SELECT COUNT(*) QTD_PRODUCT, START_SCRAPY FROM SHOWCASE_HM GROUP BY START_SCRAPY"
 query_showcase_schema = """
         CREATE TABLE showcase_hm (
