@@ -3,10 +3,10 @@
 </div>
 
 # Star Jeans
-## Status of Project
+### Status of Project
 ✅ Done!
 
-## About
+# 1.0. About
 In this project, a fictional Brazilian company aims to enter the American fashion market by setting up an e-commerce store for selling men's jeans. The objective is to keep the operating costs low and scale up as they acquire more customers. 
 
 In addition to defining the target audience and product, the company wishes to gain insights into the American market for this segment, in order to set competitive prices for its products.
@@ -23,31 +23,33 @@ The company considers its main competitor to be the H&M, a real large-scale Amer
 </p>
 
 
-## Business Problem
+# 2.0. Business Problem
 
-### The following business problems have been identified:
+## 2.1. The following business problems have been identified:
 
     1. What are the necessary raw materials/compositions for making these pants comparing with the five most produce products from H&M?
     2. What are the sets of models, styles and fits produced by H&M and which is the most produced?
     3. What are the tonality and colors used by H&M and what are the 10 most used varieties?
     4. What are the most suitable characteristics to compose an initial set of products for Star Jeans and what are the best prices for these products?
 
-### Tasks to answer the questions:
+## 2.2. Solution Strategy
 
-To answer these questions, an automatic ETL (extract, transform, and load data) process with web scraping was created to collect the data from H&M's website. The data was collected for a few days, inserted into an SQLite database, and an exploratory data analysis (EDA) was performed for each business problem.
+1. Data Collection: Collecting data from H&M's website using web scraping, which is an automated method of extracting large amounts of data from websites. H&M is a retail firm that offers clothing and accessories at a fair price.
 
-The following tasks were performed to answer the business problem questions:
+2. Data Cleaning: It involves fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset.
 
-    Analyze where and what data can be extracted from the H&M website.
-    Extract the Data.
-    Define the Schema (table columns).
-    Define the Infrastructure (API, CSV, TXT, database).
-    Design the ETL process.
-    Schedule the table update.
-    Answer business problem with EDA.
-    Deliver the final product.
+3. ETL Design: ETL (Extract, Transform, Load) is an automated process that extracts the necessary information for analysis from raw data, transforms it into a format that meets business needs, and loads it into a database. The following are the steps involved in ETL design:
 
-## Data Source
+    Designing the ETL architecture.
+    Defining the dependencies between jobs, which can sometimes depend on the state of other jobs.
+    Using windows task scheduler to schedule and run jobs automatically. Windows task scheduler runs in the background and executes scheduled jobs known.
+    Using the Python logging module to generate and store logs. The logging module allows you to track events when your code runs so that when it crashes, you can check the logs and identify the cause.
+
+<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/etl-job-flow.PNG" alt="">
+
+4. Answer business problem with EDA.
+
+# 3.0. Data Source
 
 **H&M Showcase**: https://www2.hm.com/en_us/men/products/jeans.html
 - To get all product ids and other basic information from these products.
@@ -55,34 +57,34 @@ The following tasks were performed to answer the business problem questions:
 **H&M By Product**: https://www2.hm.com/en_us/productpage.{product_id}.html
 - To get other more detailed product information.
 
-### Created DataSet
-| Columns                 | Type Data |
+## 3.1 Created DataSet
+| Columns                 | Description |
 | ----------------------- | --------- |
-| product_id              | text      |  
-| product_name            | text      |  
-| product_department      | text      |  
-| product_category        | text      |  
-| product_fit             | text      |  
-| product_model           | text      |  
-| product_price           | float     |
-| product_pieces          | int       |
-| price_per_pieces        | float     |
-| cotton_sheel            | float     |
-| elastomultiester_sheel  | float     |
-| lyocell_sheel           | float     |
-| polyester_sheel         | float     |
-| rayon_sheel             | float     |
-| spandex_sheel           | float     |
-| cotton_pck_lining       | float     |
-| polyester_pck_lining    | float     |
-| start_scrapy            | datetime  |
-| end_scrapy              | datetime  |
-| tonality_color          | text      |
-| material                | text      |
-| style                   | text      |   
-| color                   | text      |
+| product_id              | Unique Id for each product      |  
+| product_name            | Jeans' name      |  
+| product_department      | Jeans' Department (Men)      |  
+| product_category        | Jeans' Category      |  
+| product_fit             | Jeans' Fit      |  
+| product_model           | Jenas' Model      |  
+| product_price           | Total Price     |
+| product_pieces          | Quantity of pieces      |
+| price_per_pieces        | Price per piece unit     |
+| cotton_sheel            | Percentage of Cotton sheel composition     |
+| elastomultiester_sheel  | Percentage of Elastomultiester sheel composition     |
+| lyocell_sheel           | Percentage of Lyocell sheel composition     |
+| polyester_sheel         | Percentage of Polyester sheel composition     |
+| rayon_sheel             | Percentage of Rayon sheel composition     |
+| spandex_sheel           | Percentage of Spandex sheel composition     |
+| cotton_pck_lining       | Percentage of Cotton Pocket Lining composition     |
+| polyester_pck_lining    | Percentage of Polyester Pocket Lining composition      |
+| start_scrapy            | Time scrapy started  |
+| end_scrapy              | Time scrapy ended  |
+| tonality_color          | Tonality of color      |
+| material                | Fabric used |
+| style                   | Jeans' style      |   
+| color                   | Jeans' color      |
 
-## EDA Jupyter Notebook
+# 4.0. EDA Jupyter Notebook
 
 Exploratory Data Analysis (EDA) is an essential step in any data science project. It helps to uncover patterns and relationships in the data that may not be immediately apparent. In this project, EDA was used to gain insights into the American market for men's jeans and to answer the business problem questions.
 
@@ -92,9 +94,9 @@ Through the EDA, we were able to determine the necessary raw materials/compositi
 
 To access the Jupyter Notebook used for the EDA, please [click here](https://github.com/luanjesus/star_jeans_webscraping/blob/main/eda.ipynb).
 
-## Answers to the Business Analysis
+## 4.1. Answers to the Business Analysis
 
-### 1. What are the necessary raw materials/compositions for making these pants comparing with the five most produce products from H&M?
+### 4.1.1. What are the necessary raw materials/compositions for making these pants comparing with the five most produce products from H&M?
 
 By grouping the 'material' field ('denim' and 'regular') with the percentage information of the external (sheel) and internal ompositions (pocket lining) of the fabric. We can see that H&M has 35 varieties of compositions for creating pieces. A strategy that he customer can use to check which materials/compositions will be used in their parts is to replicate the most built models among the 5 varieties. 
 Assuming that the customer will initially use the sets of materials and compositions of the five cases most created by the competitor, he main materials would be: 
@@ -113,7 +115,7 @@ At least 80% of the products must be Denim and 20% a different material classifi
 - All pieces will use 100% cotton in sheel. 
 - And Regarding the composition of the pocket lining, all cases will use 35% cotton and 65% polyester.
 
-### 2. What are the sets of models, styles and fits produced by H&M and which is the most produced?
+### 4.1.2. What are the sets of models, styles and fits produced by H&M and which is the most produced?
 
 **All sets produced with the combination of model, style and fit**
 <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer2.PNG" alt="">
@@ -125,7 +127,7 @@ At least 80% of the products must be Denim and 20% a different material classifi
 - **The most produced style:** normal 
 - **The most produced fit:** slim
 
-### 3. What are the tonality and colors used by H&M and what are the 10 most used varieties?
+### 4.1.3. What are the tonality and colors used by H&M and what are the 10 most used varieties?
 
 - **All/Top10 Tonalities:**  dark, light and other (Neutral is the most common, the others is olive, graphite, etc.).
 - **All Colors:**  black, blue, gray, light, purple, beige, cream, green and white.
@@ -142,7 +144,7 @@ At least 80% of the products must be Denim and 20% a different material classifi
 <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer3-2.PNG" alt="">
 <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer3-3.PNG" alt="">
 
-### 4. What are the most suitable characteristics to compose an initial set of products for Star Jeans and what are the best prices for these products?
+### 4.1.4. What are the most suitable characteristics to compose an initial set of products for Star Jeans and what are the best prices for these products?
 
 - **Material:** Denim.
 - **Style:** Normal.
@@ -176,7 +178,7 @@ At least 80% of the products must be Denim and 20% a different material classifi
 |   slim	  |     slim	  |      0.99	 |   0.01	     |    0.35	         |   0.65	            |    light	     |  blue       |  23.32	     |   2.46	 |  19.99	 |  24.99  |
 |   slim	  |     slim	  |      0.99    |   0.01	     |    0.35	         |   0.65	            |    other	     |  blue       |  22.49	     |   2.67	 |  19.99	 |  24.99  |
 
-## Conclusions
+# 5.0. Conclusions
 
 Based on the analysis conducted, we can conclude that Star Jeans can start by producing denim pants with a normal style and a variety of fits such as slim, regular, loose, relaxed, skinny, regular joggers, regular straight, skinny ripped, and relaxed joggers. For the material, they can use 100% cotton or cotton with a maximum of 2% spandex for the sheel, and a pocket lining made of 100% cotton or 35% cotton and 65% polyester. The tonality and color options that are recommended are neutral/blue, neutral/black, dark/blue, light/blue, dark/gray, and light/gray.
 
@@ -184,7 +186,19 @@ Moreover, by analyzing the products produced by H&M, we can see that the most pr
 
 Overall, the analysis provides a good starting point for Star Jeans to produce high-quality denim pants that are competitive in terms of style, fit, and price with those of their main competitor.
 
-## Technologies
+# 6.0. Next Steps to Improve
+
+Certainly! Here are some ideas for next steps to improve:
+
+- Conduct customer surveys or focus groups to gather feedback on product features, packaging, and pricing.
+- Expand product offerings to meet the needs and preferences of a wider range of customers.
+- Develop and implement a loyalty program to reward and retain customers.
+- Analyze customer data to identify patterns and preferences, and use that information to improve marketing strategies and customer - experiences.
+- Partner with influencers or other brands to reach new audiences and expand the customer base.
+- Monitor and respond to customer reviews to improve product quality and customer satisfaction.
+- Offer promotions or discounts to incentivize repeat purchases and attract new customers.
+
+# 7.0. Technologies
 
 The following tools, libraries and IDE were used in building the project:
 
@@ -198,3 +212,11 @@ The following tools, libraries and IDE were used in building the project:
 - [Beautiful Soap 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [Visual Studio Code](https://code.visualstudio.com/)
+
+# 8.0. Authors
+
+[@luanjesus](https://www.linkedin.com/in/luanjesus/)
+
+I am a Data Analyst with a degree in Computer Engineering with +6 years of experience in managing, developing and improving transactional communications journeys as a CCM Systems Analyst. I also develop data products using machine learning techniques to solve business issues.
+
+My main objective is to work as a data scientist, developing data products with Machine Learning techniques and statistical analysis to help companies make their strategic decisions in the best possible way.
