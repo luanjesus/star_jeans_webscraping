@@ -2,10 +2,7 @@
 
 # Star Jeans
 ## Status of Project
-
-<h4 align="center"> 
-	 ✅ Done!
-</h4>
+✅ Done!
 
 ## About
 In this project, a fictional Brazilian company aims to enter the American fashion market by setting up an e-commerce store for selling men's jeans. The objective is to keep the operating costs low and scale up as they acquire more customers. 
@@ -17,7 +14,7 @@ The company considers its main competitor to be the H&M, a real large-scale Amer
 <p align="center">
  <a href="#About">About</a> •
  <a href="#Business-problem">Business Problem</a> •
- <a href="#Technologies">Technologies</a> • 
+ <a href="#technologies">Technologies</a> • 
 </p>
 
 
@@ -28,10 +25,17 @@ The company considers its main competitor to be the H&M, a real large-scale Amer
     3. What are the tonality and colors used by H&M and what are the 10 most used varieties?
     4. What are the most suitable characteristics to compose an initial set of products for Star Jeans and what are the best prices for these products?
 
-# 🛠 Technologies
+## Data Source
+
+    - H&M Showcase: https://www2.hm.com/en_us/men/products/jeans.html
+        To get all product ids and other basic information from these products.
+    - H&M By Product: https://www2.hm.com/en_us/productpage.{product_id}.html
+        To get other more detailed product information.
 
 
-As seguintes ferramentas foram usadas na construção do projeto:
+## Technologies
+
+The following tools, libraries and IDE were used in building the project:
 
 - [Python](https://www.python.org/)
 - [Jupyter Notebook](https://jupyter.org/)
@@ -43,3 +47,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Beautiful Soap 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [Visual Studio Code](https://code.visualstudio.com/)
+
