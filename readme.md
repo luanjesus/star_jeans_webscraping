@@ -50,6 +50,7 @@ The following tasks were performed to answer the business problem questions:
 
 **H&M Showcase**: https://www2.hm.com/en_us/men/products/jeans.html
 - To get all product ids and other basic information from these products.
+
 **H&M By Product**: https://www2.hm.com/en_us/productpage.{product_id}.html
 - To get other more detailed product information.
 
