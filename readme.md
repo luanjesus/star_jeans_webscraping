@@ -17,7 +17,8 @@ The company considers its main competitor to be the H&M, a real large-scale Amer
  <a href="#About">About</a> •
  <a href="#Business-problem">Business Problem</a> •
  <a href="#data-source">Data Source</a> • 
- <a href="#eda-jupyter-notebook">EDA</a> • 
+ <a href="#eda-jupyter-notebook">EDA</a> •
+ <a href="#conclusions">Conclusions</a> •  
  <a href="#technologies">Technologies</a>  
 </p>
 
@@ -197,4 +198,3 @@ The following tools, libraries and IDE were used in building the project:
 - [Beautiful Soap 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [Visual Studio Code](https://code.visualstudio.com/)
-
