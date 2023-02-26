@@ -1,4 +1,6 @@
-<div>[](https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/star_jeans.png)</div>
+<div style="text-align:center">
+  <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/star_jeans.png" alt="">
+</div>
 
 # Star Jeans
 ## Status of Project
@@ -22,7 +24,7 @@ The company considers its main competitor to be the H&M, a real large-scale Amer
 
 ## Business Problem
 
-The following business problems have been identified:
+### The following business problems have been identified:
 
     1. What are the necessary raw materials/compositions for making these pants comparing with the five most produce products from H&M?
     2. What are the sets of models, styles and fits produced by H&M and which is the most produced?
@@ -51,6 +53,35 @@ The following tasks were performed to answer the business problem questions:
     **H&M By Product**: https://www2.hm.com/en_us/productpage.{product_id}.html
         To get other more detailed product information.
 
+### Created DataSet
+| Columns                 | Type Data |
+| ----------------------- | --------- |
+| product_id              | text      |  
+| product_name            | text      |  
+| product_department      | text      |  
+| product_category        | text      |  
+| product_fit             | text      |  
+| product_model           | text      |  
+| product_price           | float     |
+| product_pieces          | int       |
+| price_per_pieces        | float     |
+| cotton_sheel            | float     |
+| elastomultiester_sheel  | float     |
+| lyocell_sheel           | float     |
+| polyester_sheel         | float     |
+| rayon_sheel             | float     |
+| spandex_sheel           | float     |
+| cotton_pck_lining       | float     |
+| polyester_pck_lining    | float     |
+| start_scrapy            | datetime  |
+| end_scrapy              | datetime  |
+| tonality_color          | text      |
+| material                | text      |
+| style                   | text      |   
+| color                   | text      |
+
+DataSet Columns
+
 ## EDA - Jupyter Notebook
 
 Exploratory Data Analysis (EDA) is an essential step in any data science project. It helps to uncover patterns and relationships in the data that may not be immediately apparent. In this project, EDA was used to gain insights into the American market for men's jeans and to answer the business problem questions.
@@ -60,6 +91,8 @@ The EDA was performed using Python and Jupyter Notebook. The notebook contains d
 Through the EDA, we were able to determine the necessary raw materials/compositions for making pants in comparison with the five most produced products by H&M. We also analyzed the sets of models, styles, and fits produced by H&M and found out which ones were the most produced. Furthermore, we explored the tonality and colors used by H&M, and we identified the 10 most commonly used varieties. Lastly, we defined the most suitable characteristics to compose an initial set of products for Star Jeans, and we determined the best prices for these products based on the average prices of similar products offered by H&M and other competitors in the American market.
 
 To access the Jupyter Notebook used for the EDA, please [click here](https://github.com/luanjesus/star_jeans_webscraping/blob/main/eda.ipynb).
+
+### Answers to the Business Analysis
 
 ## Technologies
 
