@@ -98,8 +98,10 @@ To access the Jupyter Notebook used for the EDA, please [click here](https://git
 
     Assuming that the customer will initially use the sets of materials and compositions of the five cases most created by the competitor, the main materials would be: 
 
-    <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1.png" alt="">
-    <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1-2.png" alt="">
+    <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1.PNG" alt="">
+              
+    <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1-2.PNG" alt="">
+    
     At least 80% of the products must be Denim and 20% a different material classified as 'Normal'.     
 
     **For cases using Denim:**
