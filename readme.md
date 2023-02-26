@@ -48,10 +48,10 @@ The following tasks were performed to answer the business problem questions:
 
 ## Data Source
 
-    **H&M Showcase**: https://www2.hm.com/en_us/men/products/jeans.html
-        To get all product ids and other basic information from these products.
-    **H&M By Product**: https://www2.hm.com/en_us/productpage.{product_id}.html
-        To get other more detailed product information.
+**H&M Showcase**: https://www2.hm.com/en_us/men/products/jeans.html
+    To get all product ids and other basic information from these products.
+**H&M By Product**: https://www2.hm.com/en_us/productpage.{product_id}.html
+    To get other more detailed product information.
 
 ### Created DataSet
 | Columns                 | Type Data |
@@ -80,8 +80,6 @@ The following tasks were performed to answer the business problem questions:
 | style                   | text      |   
 | color                   | text      |
 
-DataSet Columns
-
 ## EDA - Jupyter Notebook
 
 Exploratory Data Analysis (EDA) is an essential step in any data science project. It helps to uncover patterns and relationships in the data that may not be immediately apparent. In this project, EDA was used to gain insights into the American market for men's jeans and to answer the business problem questions.
@@ -93,6 +91,25 @@ Through the EDA, we were able to determine the necessary raw materials/compositi
 To access the Jupyter Notebook used for the EDA, please [click here](https://github.com/luanjesus/star_jeans_webscraping/blob/main/eda.ipynb).
 
 ### Answers to the Business Analysis
+
+1. What are the necessary raw materials/compositions for making these pants comparing with the five most produce products from H&M?
+
+    By grouping the 'material' field ('denim' and 'regular') with the percentage information of the external (sheel) and internal compositions (pocket lining) of the fabric. We can see that H&M has 35 varieties of compositions for creating pieces. A strategy that the customer can use to check which materials/compositions will be used in their parts is to replicate the most built models among the 35 varieties. 
+
+    Assuming that the customer will initially use the sets of materials and compositions of the five cases most created by the competitor, the main materials would be: 
+
+    <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1.png" alt="">
+    <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1-2.png" alt="">
+    At least 80% of the products must be Denim and 20% a different material classified as 'Normal'.     
+
+    **For cases using Denim:**
+    - Between 40% - 45% must use 100% cotton in sheel. 
+    - For the rest of the cases with Denim (55% to 60%), a variation between 98% and 99% of cotton in sheel can be used and for the rest of the sheel, use spandex (1% to 2%).
+    - Regarding the composition of the pocket lining, 75% of Denim products must use a mixture of 35% cotton and 65% polyester and the rest 100% cotton. 
+
+    **For cases using 'Normal':**
+    - All pieces will use 100% cotton in sheel. 
+    - And Regarding the composition of the pocket lining, all cases will use 35% cotton and 65% polyester.
 
 ## Technologies
 
