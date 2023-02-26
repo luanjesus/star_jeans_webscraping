@@ -142,12 +142,12 @@ At least 80% of the products must be Denim and 20% a different material classifi
 
 ### 4. What are the most suitable characteristics to compose an initial set of products for Star Jeans and what are the best prices for these products?
 
-**Material:** Denim.
-**Style:** Normal.
-**Sheel Composition:** 100% Cotton or Cotton with a maximum of 2% spandex .
-**Sheel Pocket Lining:** 100% Cotton or 35% Cotton and 65% of Polyester.
-**Tonality/Color:** Netral/Blue, Netral/Black, Dark/Blue, Light/Blue, Dark/Gray and Light/Gray.
-**Fit/Model:** Slim, Regular, Loose, Relaxed, Skinny, Regular/Joggers, Regular/Straight, Skinny/Ripped, Relaxed/Joggers.
+- **Material:** Denim.
+- **Style:** Normal.
+- **Sheel Composition:** 100% Cotton or Cotton with a maximum of 2% spandex .
+- **Sheel Pocket Lining:** 100% Cotton or 35% Cotton and 65% of Polyester.
+- **Tonality/Color:** Netral/Blue, Netral/Black, Dark/Blue, Light/Blue, Dark/Gray and Light/Gray.
+- **Fit/Model:** Slim, Regular, Loose, Relaxed, Skinny, Regular/Joggers, Regular/Straight, Skinny/Ripped, Relaxed/Joggers.
 
 **Best prices for each type of part:**
 
