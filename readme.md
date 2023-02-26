@@ -17,7 +17,7 @@ The company considers its main competitor to be the H&M, a real large-scale Amer
  <a href="#About">About</a> •
  <a href="#Business-problem">Business Problem</a> •
  <a href="#data-source">Data Source</a> • 
- <a href="#eda--jupyter-notebook">EDA</a> • 
+ <a href="#eda-jupyter-notebook">EDA</a> • 
  <a href="#technologies">Technologies</a>  
 </p>
 
@@ -81,7 +81,7 @@ The following tasks were performed to answer the business problem questions:
 | style                   | text      |   
 | color                   | text      |
 
-## EDA - Jupyter Notebook
+## EDA Jupyter Notebook
 
 Exploratory Data Analysis (EDA) is an essential step in any data science project. It helps to uncover patterns and relationships in the data that may not be immediately apparent. In this project, EDA was used to gain insights into the American market for men's jeans and to answer the business problem questions.
 
@@ -175,6 +175,13 @@ At least 80% of the products must be Denim and 20% a different material classifi
 |   slim	  |     slim	  |      0.99	 |   0.01	     |    0.35	         |   0.65	            |    light	     |  blue       |  23.32	     |   2.46	 |  19.99	 |  24.99  |
 |   slim	  |     slim	  |      0.99    |   0.01	     |    0.35	         |   0.65	            |    other	     |  blue       |  22.49	     |   2.67	 |  19.99	 |  24.99  |
 
+## Conclusions
+
+Based on the analysis conducted, we can conclude that Star Jeans can start by producing denim pants with a normal style and a variety of fits such as slim, regular, loose, relaxed, skinny, regular joggers, regular straight, skinny ripped, and relaxed joggers. For the material, they can use 100% cotton or cotton with a maximum of 2% spandex for the sheel, and a pocket lining made of 100% cotton or 35% cotton and 65% polyester. The tonality and color options that are recommended are neutral/blue, neutral/black, dark/blue, light/blue, dark/gray, and light/gray.
+
+Moreover, by analyzing the products produced by H&M, we can see that the most produced model, style, and fit are slim, normal, and slim, respectively. Additionally, H&M uses a variety of tonalities and colors in their products, with neutral being the most common. The prices of Star Jeans products can be competitive with the prices of H&M, as shown in the analysis of the best prices for each type of part.
+
+Overall, the analysis provides a good starting point for Star Jeans to produce high-quality denim pants that are competitive in terms of style, fit, and price with those of their main competitor.
 
 ## Technologies
 
