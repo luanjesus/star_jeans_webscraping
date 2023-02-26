@@ -49,9 +49,9 @@ The following tasks were performed to answer the business problem questions:
 ## Data Source
 
 **H&M Showcase**: https://www2.hm.com/en_us/men/products/jeans.html
-    To get all product ids and other basic information from these products.
+- To get all product ids and other basic information from these products.
 **H&M By Product**: https://www2.hm.com/en_us/productpage.{product_id}.html
-    To get other more detailed product information.
+- To get other more detailed product information.
 
 ### Created DataSet
 | Columns                 | Type Data |
@@ -116,14 +116,64 @@ At least 80% of the products must be Denim and 20% a different material classifi
 **All sets produced with the combination of model, style and fit**
 <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer2.PNG" alt="">
 
-**Types of Models:** slim, regular, loose, relaxed, skinny, joggers, straight, ripped
-**Types of Styles:** normal, trashed, checked, no_fade, patterned, print
-**Types of Fits:** slim, regular, loose, relaxed and skinny
-**The most produced model:** slim 
-**The most produced style:** normal 
-**The most produced fit:** 
+- **Types of Models:** slim, regular, loose, relaxed, skinny, joggers, straight, ripped.
+- **Types of Styles:** normal, trashed, checked, no_fade, patterned, print
+- **Types of Fits:** slim, regular, loose, relaxed and skinny
+- **The most produced model:** slim 
+- **The most produced style:** normal 
+- **The most produced fit:** slim
 
 ### 3. What are the tonality and colors used by H&M and what are the 10 most used varieties?
+
+- **All/Top10 Tonalities:**  dark, light and other (Neutral is the most common, the others is olive, graphite, etc.).
+- **All Colors:**  black, blue, gray, light, purple, beige, cream, green and white.
+- **All Colors:**  black, blue, gray, light, purple, beige and cream.
+
+- **In the cases of the 10 most used tones:** 60% are of the 'other' type and of these, at least 50% are of the neutral type (for the colors blue, black and white) and the others are tones such as beige, graphite and olive.
+
+- **The most used colors:** Approximately 58% blue, 23% black, 13% gray, 3% white, 2% cream and 1% purple.
+
+- **Note 1:** Approximately 49% of the products are composed of other neutral tones.
+- **Note 2:** Approximately 57% of the products are composed of blue colors.
+
+<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer3-1.PNG" alt="">
+<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer3-2.PNG" alt="">
+<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer3-3.PNG" alt="">
+
+### 4. What are the most suitable characteristics to compose an initial set of products for Star Jeans and what are the best prices for these products?
+
+**Material:** Denim.
+**Style:** Normal.
+**Sheel Composition:** 100% Cotton or Cotton with a maximum of 2% spandex .
+**Sheel Pocket Lining:** 100% Cotton or 35% Cotton and 65% of Polyester.
+**Tonality/Color:** Netral/Blue, Netral/Black, Dark/Blue, Light/Blue, Dark/Gray and Light/Gray.
+**Fit/Model:** Slim, Regular, Loose, Relaxed, Skinny, Regular/Joggers, Regular/Straight, Skinny/Ripped, Relaxed/Joggers.
+
+**Best prices for each type of part:**
+
+| product_fit |	product_model | cotton_sheel | spandex_sheel | cotton_pck_lining | polyester_pck_lining	| tonality_color | color       |   mean      | std       | min       |   max   |
+| ----------- | ------------- | ------------ | ------------- | ----------------- | -------------------- | -----------    | ----------- | ----------- | --------  | --------- | ------- |
+|   loose	  |     loose	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |     dark	     |  blue       |  44.99	     |   0.00	 |  44.99	 |  44.99  |
+|   loose	  |     loose	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |    light	     |  blue       |  41.66	     |   2.46	 |  39.99	 |  44.99  |
+|   loose	  |     loose	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |    light	     |  gray       |  39.99	     |   0.00	 |  39.99	 |  39.99  |
+|   loose	  |     loose	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |    other	     |  blac       |  39.99	     |   0.00	 |  39.99	 |  39.99  |
+|   loose	  |     loose	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |    other	     |  blue       |  40.82	     |   1.90	 |  39.99	 |  44.99  |
+|   regular	  |     regular	  |      0.98	 |   0.02	     |    0.35	         |   0.65	            |     dark	     |  gray       |  34.99	     |   0.00	 |  34.99	 |  34.99  |
+|   regular	  |     regular	  |      0.98	 |   0.02	     |    0.35	         |   0.65	            |    light	     |  blue       |  24.99	     |   0.00	 |  24.99	 |  24.99  |
+|   regular	  |     regular	  |      0.99	 |   0.01	     |    0.35	         |   0.65	            |    other	     |  blue       |  34.99	     |   7.39	 |  24.99	 |  39.99  |
+|   regular	  |     regular	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |    other	     |  blue       |  19.99	     |   0.00	 |  19.99	 |  19.99  |
+|   regular	  |     straight  |      0.99	 |   0.01	     |    0.35	         |   0.65	            |    other	     |  blue       |  39.99	     |   5.35	 |  34.99	 |  44.99  |
+|   relaxed	  |     relaxed	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |     dark	     |  blue       |  38.74	     |   5.63	 |  29.99	 |  44.99  |
+|   relaxed	  |     relaxed	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |    light	     |  blue       |  36.66	     |   4.92	 |  29.99	 |  39.99  |
+|   relaxed	  |     relaxed	  |      1.00	 |   0.00	     |    0.35	         |   0.65	            |    other	     |  blue       |  38.81	     |   5.46	 |  29.99	 |  44.99  |
+|   skinny	  |     ripped	  |      0.98	 |   0.02	     |    0.35	         |   0.65	            |    light	     |  blue       |  39.99	     |   0.00	 |  39.99	 |  39.99  |
+|   skinny	  |     ripped	  |      0.98	 |   0.02	     |    0.35	         |   0.65	            |    other	     |  blue       |  39.99	     |   0.00	 |  39.99	 |  39.99  |
+|   skinny	  |     skinny	  |      0.98	 |   0.02	     |    0.35	         |   0.65	            |    other	     |  blue       |  29.99	     |   0.00	 |  29.99	 |  29.99  |
+|   skinny	  |     skinny	  |      0.99	 |   0.01	     |    0.35	         |   0.65	            |     dark	     |  blue       |  24.99	     |   0.00	 |  24.99	 |  24.99  |
+|   skinny	  |     skinny	  |      0.99	 |   0.01	     |    0.35	         |   0.65	            |    other	     |  blue       |  24.99	     |   0.00	 |  24.99	 |  24.99  |
+|   slim	  |     slim	  |      0.99	 |   0.01	     |    0.35	         |   0.65	            |    light	     |  blue       |  23.32	     |   2.46	 |  19.99	 |  24.99  |
+|   slim	  |     slim	  |      0.99    |   0.01	     |    0.35	         |   0.65	            |    other	     |  blue       |  22.49	     |   2.67	 |  19.99	 |  24.99  |
+
 
 ## Technologies
 
