@@ -94,36 +94,36 @@ To access the Jupyter Notebook used for the EDA, please [click here](https://git
 
 ### 1. What are the necessary raw materials/compositions for making these pants comparing with the five most produce products from H&M?
 
-    By grouping the 'material' field ('denim' and 'regular') with the percentage information of the external (sheel) and internal compositions (pocket lining) of the fabric. We can see that H&M has 35 varieties of compositions for creating pieces. A strategy that the customer can use to check which materials/compositions will be used in their parts is to replicate the most built models among the 35 varieties. 
+By grouping the 'material' field ('denim' and 'regular') with the percentage information of the external (sheel) and internal ompositions (pocket lining) of the fabric. We can see that H&M has 35 varieties of compositions for creating pieces. A strategy that he customer can use to check which materials/compositions will be used in their parts is to replicate the most built models among the 5 varieties. 
+Assuming that the customer will initially use the sets of materials and compositions of the five cases most created by the competitor, he main materials would be: 
 
-    Assuming that the customer will initially use the sets of materials and compositions of the five cases most created by the competitor, the main materials would be: 
+<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1.PNG" alt="">
+          
+<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1-2.PNG" alt="">
+At least 80% of the products must be Denim and 20% a different material classified as 'Normal'.     
 
-    <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1.PNG" alt="">
-              
-    <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1-2.PNG" alt="">
+**For cases using Denim:**
+- Between 40% - 45% must use 100% cotton in sheel. 
+- For the rest of the cases with Denim (55% to 60%), a variation between 98% and 99% of cotton in sheel can be used and for the rest of he sheel, use spandex (1% to 2%).
+- Regarding the composition of the pocket lining, 75% of Denim products must use a mixture of 35% cotton and 65% polyester and the rest 00% cotton. 
 
-    At least 80% of the products must be Denim and 20% a different material classified as 'Normal'.     
-
-    **For cases using Denim:**
-    - Between 40% - 45% must use 100% cotton in sheel. 
-    - For the rest of the cases with Denim (55% to 60%), a variation between 98% and 99% of cotton in sheel can be used and for the rest of the sheel, use spandex (1% to 2%).
-    - Regarding the composition of the pocket lining, 75% of Denim products must use a mixture of 35% cotton and 65% polyester and the rest 100% cotton. 
-
-    **For cases using 'Normal':**
-    - All pieces will use 100% cotton in sheel. 
-    - And Regarding the composition of the pocket lining, all cases will use 35% cotton and 65% polyester.
+**For cases using 'Normal':**
+- All pieces will use 100% cotton in sheel. 
+- And Regarding the composition of the pocket lining, all cases will use 35% cotton and 65% polyester.
 
 ### 2. What are the sets of models, styles and fits produced by H&M and which is the most produced?
 
 **All sets produced with the combination of model, style and fit**
-<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer1-2.PNG" alt="">
+<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/business_problem_answer2.PNG" alt="">
 
 **Types of Models:** slim, regular, loose, relaxed, skinny, joggers, straight, ripped
 **Types of Styles:** normal, trashed, checked, no_fade, patterned, print
 **Types of Fits:** slim, regular, loose, relaxed and skinny
 **The most produced model:** slim 
 **The most produced style:** normal 
-**The most produced fit:** slim
+**The most produced fit:** 
+
+### 3. What are the tonality and colors used by H&M and what are the 10 most used varieties?
 
 ## Technologies
 
