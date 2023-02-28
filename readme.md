@@ -1,10 +1,14 @@
-<div style="text-align:center">
-  <img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/star_jeans.png" alt="">
-</div>
+<h2>✅ Project Done!</h2>
+
+<span style="color: yellow;"><strong>Disclaimer:</strong> The following context is completely fictitious. The company, context and business issues were created exclusively for the development of the project and are based on a project from <a href="https://comunidadeds.com/?utm_source=linkedin&utm_medium=company-page">Comunidade DS</a>.</span>
+
+For a more comprehensive and detailed view of the exploratory data analysis, please refer to the following Jupyter notebook.
+
+[![EXPLORATORY DATA ANALYSIS - Jupyter](https://img.shields.io/badge/Exploratory%20Data%20Analysis-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://github.com/luanjesus/star_jeans_webscraping/blob/main/eda.ipynb)
 
 # Star Jeans
-### Status of Project
-✅ Done!
+
+<img src="https://github.com/luanjesus/star_jeans_webscraping/blob/main/repos/img/star_jeans.png" alt="">
 
 # 1.0. About
 In this project, a fictional Brazilian company aims to enter the American fashion market by setting up an e-commerce store for selling men's jeans. The objective is to keep the operating costs low and scale up as they acquire more customers. 
